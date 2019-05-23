@@ -2,7 +2,7 @@
 ## Demonstation:
 Open up `visualized-overflow.c` and take a quick look at it. At first glance, it's nearly identical to our previous code, however the most important change here is the position in which we declare our buffer. This change will be explained momentarily. Also included is a printf statement that will visualize the memory we are interested in without requiring GDB.
 
-This time we will need the ~forbidden~ `-fno-stack-protector` flag when compiling. Take note that this flag must be manually typed and will not autocomplete with tab.
+This time we will need the ~forbidden~ secret `-fno-stack-protector` flag when compiling. Take note that this flag must be manually typed and will not autocomplete with tab.
 
 Compiling with `gcc -fno-stack-protector -o the-segfault the-segfault.c` and running, we get a visualization of the iterations of our loop. We can see our 15 byte buffer fill up, but then the remaining 4 'A' bytes are written into the memory of our `overflowed_int`! Why is this?
 

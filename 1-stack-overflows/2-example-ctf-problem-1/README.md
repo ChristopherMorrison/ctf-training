@@ -1,4 +1,4 @@
-# Visualized Overflow
+# CTF Example
 ## Demonstation:
 Here is an example CTF problem, the printf statement used previously has been left i n for ease of use. The goal is to set overflowed_int to `\xf00dbabe`
 
