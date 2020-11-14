@@ -10,18 +10,23 @@ An attempt at creating a coherent collection of training materials.
 Sections are meant to be a dive into small but important concepts.
 
 | Section	| Contents 		        |
+|-----------|-----------------------|
 | PWN		| Binary Exploitation	|
 | RE		| Reverse Engineering 	|
 | WEB       | Web Exploitation      |
 
 ## PWN
 Binary Exploitation (Pwning)
+0. TODO: Binary Debugging
 1. Stack Overflows
     - 0) Segfault Example via an Overflow
     - 1) Visualized Overflow
-    - 2) Example CTF Problem
-    - 3) TODO: Overflowing beyond the stack
-    - 4) TODO: Stack Canaries: The Compiler Strikes Back
+    - 2) Example CTF Problem(s)
+2. TODO: printf
+3. Controlling Execution
+    - 0) TODO: Overflowing beyond the stack
+    - 1) TODO: Overwriting return pointers
+    - 3) TODO: Stack Canaries
 
 ## RE
 Reverse Engineering
@@ -33,3 +38,7 @@ Reverse Engineering
 
 
 ## WEB
+TODO...
+
+
+

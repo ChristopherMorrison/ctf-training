@@ -6,7 +6,7 @@
 
 void main(int argc, char** argv) {
     int overflowed_int = 0;
-    char buffer[15] = {};
+    char buffer[{{ buffer_size }}] = {};
     int i;
     
     strcpy(buffer, argv[1]);
@@ -14,12 +14,12 @@ void main(int argc, char** argv) {
     printf("     buffer    | overflowed_int\n");
     printf("%-15.15s|%-4.4s = %i\n",buffer, (char*)&overflowed_int, overflowed_int);
     
-    if (overflowed_int == 0xf00dbabe){
+    if (overflowed_int == 0x{{ hexword }}){
         printf("Success!\n");
     } else{
         printf("Try Again\n");
     }
 
-
     return;
 }
+
